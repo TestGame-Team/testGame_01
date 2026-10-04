@@ -58,17 +58,17 @@ public class Player extends Entity{
         direction = "down";
 
         //PLAYER STATUS
-        level = 100;
-        maxLife = 20;
+        level = 1;
+        maxLife = 2;
         life = maxLife;
-        maxMana = 100;
+        maxMana = 1;
         mana = maxMana;
         ammo = 100;
         strength = 100;           // The more strenght he has, the more damage he gives.
         dexterity = 100;          // The more dexterity he has, the less damage he receives.
         exp = 100;
         nextLevelExp = 4;
-        coin = 4000;
+        coin = 40;
         invincible = false;
         currentWeapon = new OBJ_Sword_Normal(gp);
         currentShield = new OBJ_Shield_Wood(gp);
