@@ -2,6 +2,8 @@ package main;
 
 import javax.swing.*;
 
+//hello?
+
 public class Main {
 
     public static JFrame window;
