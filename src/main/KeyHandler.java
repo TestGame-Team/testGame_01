@@ -222,17 +222,8 @@ public class KeyHandler implements KeyListener {
                 case 1: gp.tileM.loadMap("/maps/interior01.txt",1); break;
             }
         }
-        if(code == KeyEvent.VK_G)   //Debug Menu
-        {
-            if(godModeOn == false)
-            {
-                godModeOn = true;
-            }
-            else if(godModeOn == true)
-            {
-                godModeOn = false;
-            }
-        }*/
+        */
+        
     }
     public void pauseState(int code)
     {
@@ -277,7 +268,7 @@ public class KeyHandler implements KeyListener {
             case 0: maxCommandNum = 5; break;
             case 3: maxCommandNum = 1; break;
         }
-        if(code == KeyEvent.VK_W)
+        if(code == KeyEvent.VK_W || code == KeyEvent.VK_UP)
         {
             gp.ui.commandNum--;
             gp.playSE(9);
@@ -286,7 +277,7 @@ public class KeyHandler implements KeyListener {
                 gp.ui.commandNum = maxCommandNum;
             }
         }
-        if(code == KeyEvent.VK_S)
+        if(code == KeyEvent.VK_S || code == KeyEvent.VK_DOWN)
         {
             gp.ui.commandNum++;
             gp.playSE(9);
@@ -295,7 +286,7 @@ public class KeyHandler implements KeyListener {
                 gp.ui.commandNum = 0;
             }
         }
-        if(code == KeyEvent.VK_A)
+        if(code == KeyEvent.VK_A || code == KeyEvent.VK_LEFT)
         {
             if(gp.ui.subState == 0)
             {
@@ -312,7 +303,7 @@ public class KeyHandler implements KeyListener {
                 }
             }
         }
-        if(code == KeyEvent.VK_D)
+        if(code == KeyEvent.VK_D || code == KeyEvent.VK_RIGHT)
         {
             if(gp.ui.subState == 0)
             {
